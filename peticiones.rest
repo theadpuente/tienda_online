@@ -1,0 +1,104 @@
+
+@hostname = http://localhost
+@port = 3000
+@url = {{hostname}}:{{port}}
+
+### 
+GET {{url}}/api/products
+
+
+
+###
+GET {{url}}/api/products/63c6dec5d09e9bb8abe13b81
+
+
+###
+GET {{url}}/api/products/actives
+
+
+
+
+
+
+###
+POST {{url}}/api/products
+Content-Type: application/json
+
+{
+    "name": "Ipad",
+    "description": "Sirve para ver cosas",
+    "price": 999,
+    "department": "tech",
+    "stock": 200,
+    "available": false
+}
+
+
+###
+PUT {{url}}/api/products/63c6dec5d09e9bb8abe13b81
+Content-Type: application/json
+
+{
+    "stock": 200,
+    "price": 15
+}
+
+
+###
+DELETE {{url}}/api/products/63c6dec5d09e9bb8abe13b81
+
+
+
+@apiUsers = {{url}}/api/users
+
+
+###
+GET 
+
+
+
+###
+GET {{url}}/api/users
+
+
+
+###
+GET {{apiUsers}}
+
+
+
+###
+GET {{apiUsers}}/63c84a8c216e3bb9188677ab/cart/add/63c6dec5d09e9bb8abe13b81
+
+
+###
+POST {{apiUsers}}
+Content-Type: application/json
+
+{
+    "username": "arturo",
+    "email": "arturo@puente.com",
+    "age": 34,
+    "password": "sdmvsldmvlñmñdsvmsd"
+}
+
+
+
+
+
+
+###
+POST {{url}}/api/users
+Content-Type: application/json
+
+{
+    "username": "arturo",
+    "email": "hello@gakdv.com",
+    "age": 34,
+    "password": "sdmvsldmvlñmñdsvmsd",
+    "products": ""
+
+}
+
+
+

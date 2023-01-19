@@ -1,7 +1,8 @@
 
 @hostname = http://localhost
 @port = 3000
-@url = {{hostname}}:{{port}}
+@url_local = {{hostname}}:{{port}}
+@url = https://tienda-online-rnwa.onrender.com
 
 ### 
 GET {{url}}/api/products
